@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samarth Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"> -->
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="#">Portfo<span>lio.</span></a>
+          </div>
+          <ul id = "sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-x" id="one" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars one" id="one" onclick="openMenu()"></i>
+        </nav>
+        <div class="front">
+          <div class="header-text">
+            <p><span>Web</span> Developer</p>
+            <h1>Hi, I'm <span> Samarth </span> <br />Kulshrestha from India</h1>
+          </div>
+          <img src="hm3.webp" alt="" height="450px" padding-top="20px">
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <h2 class="subtitle">About Me</h2>
+
+      <div class="container">
+        <div class="rows">
+          <div class="about-col-1">
+            <img src="about.jpeg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <div class="text">
+              I'm Samarth and I'm a <span class="typing-2"></span>
+            </div>
+            <br />
+            <p>
+              Hello !!! I am a second year undergraduate at the Chandigarh
+              University Mohali, Punjab in Computer Science and Engineering. As
+              a student of Computer Science, I am fascinated by the extensive
+              impact computers can have in solving real world problems. I am
+              specially interested in the field of web development and design,
+              among other areas of computer science and engineering. <br />
+              Among my other interests, I am fascinated by Indian History and
+              Spirituality. I also pursue quizzing, taking participate in
+              hackathons and playing cricket as hobbies.
+            </p>
+            <br />
+            <button class="CV">Download CV</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services">
+      <h2 class="subtitle">My Services</h2>
+      <div class="container">
+        <div class="service-list">
+          <div>
+            <i class="fa-solid fa-code" style="color: #dc143c"></i>
+            <h2>Web Design</h2>
+            <p>
+              I have decent knowledge about web development both back-end and front-end.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-laptop-code" style="color: #dc143c"></i>
+            <h2>Programming</h2>
+            <p>
+              I have learned and worked with C,C++,Python,Java,R Languages. Made projects using all the languages.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-video" style="color: #dc143c"></i>
+            <h2>Video Editing</h2>
+            <p>
+             I have edited many videos just because I'm passionate about it.
+             I use adobe premiere pro and filmora for Video Editing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="projects">
+      <h2 class="subtitle">My Projects</h2>
+      <div class="container">
+        <div class="work-list">
+          <div class="work">
+            <img src="work-1.jpg" alt="" srcset="" />
+            <div class="layer">
+              <h3>Weather Application</h3>
+              <p>
+                A web application which helps to find the weather of specific locations.
+              </p>
+              <a href=""><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="work-2.jpg" alt="" srcset="" />
+            <div class="layer">
+              <h3>Random Joke Generator</h3>
+              <p>
+                A Web Appliaction which generates a random joke as you click on the button. In this there is an API which fetches the joke and how it to the user.
+              </p>
+              <a href=""><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-3.jpg" alt="" srcset="" />
+            <div class="layer">
+              <h3>Tic-Tac-Toe</h3>
+              <p>
+                A simple game of Tic-Tac-Toe created by using HTML, CSS and javascript.
+               </p>
+              <a href=""><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <div id="contact">
+        <h2 class="subtitle">Contact Me</h2>
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h3>Get in Touch</h3><br>
+                    <p>Thank You for your time to go through my website. you can reach me via samarthkulshrestha518@gmail.com</p>
+                    <br>
+                    <div class="icons">
+                        <div class="row-2">
+                            <i class="fa-solid fa-user" style="color: #dc143c;"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="title">Samarth Kulshrestha</div>
+                            </div>
+                        </div>
+                        <div class="row-2">
+                            <i class="fa-solid fa-location-dot" style="color: #dc143c;"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="title">Agra, Uttar Pradesh</div>
+                            </div>
+                        </div>
+                        <div class="row-2">
+                            <i class="fa-solid fa-envelope" style="color: #dc143c;"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="title">samarthkulshrestha518@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <h3>Message Me</h3><br>
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="end">
+        <div class="social-icons">
+            <i class="fa-brands fa-instagram" style="color: #fcfcfc;"></i>
+            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+        </div>
+        <span>Created by <a href="index.html">SAMARTH KULSHRESTHA</a> | &copy; 2023 All rights reserved</span>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

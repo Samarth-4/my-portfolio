@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Add responsive styles for the header */
+body {
+  background: rgb(0, 0, 0);
+  color: rgb(241, 244, 246);
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  padding: 10px 5%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 25px; /* Adjust the font size for smaller screens */
+  font-weight: 600;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 16px; /* Adjust the font size for smaller screens */
+  position: relative;
+}
+
+.front {
+  display: flex;
+  flex-direction: column; /* Change to column layout for smaller screens */
+  align-items: center; /* Center the content for smaller screens */
+  margin-top: 50px;
+}
+
+.header-text {
+  margin-top: 5%; /* Adjust the margin for smaller screens */
+  font-size: 20px; /* Adjust the font size for smaller screens */
+  text-align: center; /* Center the text for smaller screens */
+  flex-basis: 100%; /* Take full width for smaller screens */
+}
+
+.header-text h1 {
+  font-size: 40px; /* Adjust the font size for smaller screens */
+}
+
+/* Add responsive styles for other sections (about, services, projects, contact) */
+#about .container {
+  padding: 0 5%; /* Adjust padding for smaller screens */
+}
+
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 100%; /* Take full width for smaller screens */
+}
+
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about-col-2 {
+  flex-basis: 100%; /* Take full width for smaller screens */
+  font-family: 'poppins', sans-serif;
+}
+
+.about-col-2 .text {
+  font-size: large;
+}
+
+.about-col-2 p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: medium;
+}
+
+.CV {
+  font-size: medium;
+}
+
+#services .service-list {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid layout for smaller screens */
+}
+
+.service-list div {
+  padding: 10px; /* Adjust padding for smaller screens */
+  font-size: small; /* Adjust font size for smaller screens */
+}
+
+.service-list div i {
+  font-size: 30px; /* Adjust icon size for smaller screens */
+  margin-bottom: 10px; /* Adjust icon margin for smaller screens */
+}
+
+#projects .work-list {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid layout for smaller screens */
+}
+
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.layer {
+  font-size: small; /* Adjust font size for smaller screens */
+}
+
+.work h3 {
+  font-size: medium; /* Adjust font size for smaller screens */
+}
+
+.btn {
+  font-size: medium; /* Adjust font size for smaller screens */
+}
+
+#contact .row {
+  flex-direction: column; /* Change to column layout for smaller screens */
+}
+
+.contact-left {
+  font-size: medium; /* Adjust font size for smaller screens */
+}
+
+.icons .row-2 i {
+  margin: 5px 10px; /* Adjust icon margin for smaller screens */
+}
+
+.contact-right {
+  font-size: medium; /* Adjust font size for smaller screens */
+}
+
+.contact-right form input,
+.contact-right form textarea {
+  font-size: medium; /* Adjust font size for smaller screens */
+}
+
+/* Add media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  nav {
+    position: relative;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 100%; /* Position the mobile menu below the navigation bar */
+    right: 0;
+    background: #ff004f;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    display: none; /* Hide the mobile menu by default */
+  }
+
+  nav ul li {
+    display: block;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  nav .one {
+    display: block;
+    font-size: 25px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+
+  /* Show the mobile menu when the menu icon is clicked */
+  #sidemenu.active ul {
+    display: block;
+  }
+
+  .subtitle {
+    font-size: 30px; /* Adjust font size for mobile devices */
+  }
+}
+
+/* Add media query for tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo a {
+    font-size: 30px; /* Adjust font size for tablet devices */
+  }
+
+  .header-text h1 {
+    font-size: 50px; /* Adjust font size for tablet devices */
+  }
+
+  .subtitle {
+    font-size: 35px; /* Adjust font size for tablet devices */
+  }
+
+  #about .container {
+    padding: 0 10%; /* Adjust padding for tablet devices */
+  }
+
+  .about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .about-col-2 p {
+    font-size: large;
+  }
+
+  .CV {
+    font-size: large;
+  }
+
+  #services .service-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid layout for tablet devices */
+  }
+
+  .service-list div {
+    padding: 15px; /* Adjust padding for tablet devices */
+    font-size: medium; /* Adjust font size for tablet devices */
+  }
+
+  .service-list div i {
+    font-size: 40px; /* Adjust icon size for tablet devices */
+    margin-bottom: 20px; /* Adjust icon margin for tablet devices */
+  }
+
+  #projects .work-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid layout for tablet devices */
+  }
+
+  .work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .layer {
+    font-size: medium; /* Adjust font size for tablet devices */
+  }
+
+  .work h3 {
+    font-size: large; /* Adjust font size for tablet devices */
+  }
+
+  .btn {
+    font-size: large; /* Adjust font size for tablet devices */
+  }
+
+  #contact .row {
+    flex-direction: row; /* Change back to row layout for tablet devices */
+  }
+
+  .contact-left {
+    font-size: large; /* Adjust font size for tablet devices */
+  }
+
+  .icons .row-2 i {
+    margin: 10px 20px; /* Adjust icon margin for tablet devices */
+  }
+
+  .contact-right {
+    font-size: large; /* Adjust font size for tablet devices */
+  }
+
+  .contact-right form input,
+  .contact-right form textarea {
+    font-size: large; /* Adjust font size for tablet devices */
+  }
+}
